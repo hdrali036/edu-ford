@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>eduford</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            
+            <ul class="list" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ENROLL NOW</a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university.
+            <br>Today we’re a forward-looking, diverse community devoted to social justice, restless inquiry and respect for each person’s individual needs and talents..</p>
+            <a href="">Visit us to know more.</a>
+        </div>
+
+    </section>
+
+<!-------JavaScript for toggle menu -->
+<script>
+    var navlinks=document.getElementById("navlinks");
+    
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+    function hidemenu(){
+        navlinks.style.right="-200px";
+    }
+
+</script>   
+
+<section class="courses">
+    <h1> Courses We Offer </h1>
+    <p>Explore the intersection of technology and society. Learn about environmental justice. Take the famous Problem of God course.
+    <br>Our innovative courses inspire and invite you to help solve some of today’s most pressing local, national and global issues.</p>
+    
+    <div class="course-cards">
+        <div class="undergraduate-programs card">
+         <h1>Undergraduate Programs</h1>
+         <p>
+            For decades, Eduford College has improved the health of our communities, one graduate at a time.
+            The JoAnn McGrath School of Nursing and Health Professions, as one of the largest nursing schools
+            in Wisconsin, offers a wide array of fully accredited nursing programs, guaranteed clinical placements
+            and a technology-rich Center for Clinical Education.
+         </p>
+        </div>
+
+        <div class="graduate-programs card">
+            <h1>Graduate Programs</h1>
+            <p>
+                Building on our strong roots in leadership, health care and education, Eduford is proud to 
+                offer an array of coed graduate programs for women and men who are ready to advance their careers 
+                and grow as leaders.<br>The Eduford College Community Psychology Master's program will help you
+                to meet your goals of becoming a Licensed Professional Counselor.
+            </p>
+        </div>
+
+        <div class="post-graduation card">
+        <h1>Post Graduation</h1>
+         <p>
+            The Eduford, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited 
+            nursing programs, guaranteed clinical placements and a technology-rich Center for Clinical Education.<br>
+            The Eduford College Community Psychology Master's program will help you to meet your goals of becoming a 
+            Licensed Professional Counselor.
+         </p>
+        </div>
+
+        
+    </div>
+
+    <div class="course-cards">
+        <div class="undergraduate-programs card">
+         <h1>Advanced Biomedical Sciences</h1>
+         <p>
+            The Advance Biomedical Sciences (ABS) Certificate program is in partnership with George Mason University
+            and is offered through our GeorgeSquared Program.<br>
+            The program offers an outstanding biomedical sciences curriculum to enhance a student’s background for 
+            application to professional schools in the biomedical field.
+         </p>
+        </div>
+
+        <div class="graduate-programs card">
+            <h1>Art and Museum Studies</h1>
+            <p>
+                Eduford University’s M.A. degree program in Art and Museum Studies brings the academic study of art 
+                museums together with museum practice, and emphasizes the international contexts of museums in the modern
+                 world. Through courses, individual research, and internships, students work closely with Eduford art 
+                 history faculty, curators, and other museum professionals in Washington DC.
+            </p>
+        </div>
+
+        <div class="post-graduation card">
+        <h1>Artificial Intelligence Management</h1>
+         <p>
+            
+            In the Certificate in Artificial Intelligence Management, you’ll have the opportunity to engage with leaders in technology and 
+            business strategy while exploring how applications of AI can be leveraged for competitive advantage. Using theory and real-world
+            case studies, you’ll think strategically about organizational performance and gain insight into key policy issues affecting 
+            business leaders.
+         </p>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+</section>
+
+</body>
+
+</html>
