@@ -6,14 +6,11 @@
 }
 .header{
     min-height: 100vh;
-    min-width: 100%;
+    min-width: 100vw;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/banner.png);
     background-position: center;
     background-size: cover;
     position:relative;
-    
-    
-
 }
 nav{
     display: flex;
@@ -101,10 +98,12 @@ nav .fa{
         background-color: #f44556;
         z-index: 2;
         top:0;
-        right: -200px;
+        right:0;
         text-align: left;
-        transition: 1s;
+        transition:1s;
+        display: none;
     }
+
     nav .fa{
         display: block;
         color:#fff;
@@ -117,6 +116,7 @@ nav .fa{
     nav .fa-bars{
         z-index: 1;
     }
+    
 }
 
 /*-------------course----------- */
@@ -169,4 +169,168 @@ nav .fa{
         font-size: 13px;
     }
     
+}
+
+/* --------------KEY FEATURES----------------*/
+.key-features{
+    text-align: center;
+    margin: 6%;
+}
+.key-features h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.key-features p{
+    font-size: 15px;
+    color: gray;
+    margin: 1.5rem;
+}
+.feature-cards{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.single-feature-card img{
+    border-radius: 10px;
+    width: 95%;
+    display: block;
+}
+.single-feature-card{
+    
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card1 .layer:hover{
+    background:rgba(199, 216, 48, 0.7);
+}
+.card2 .layer:hover{
+    background:rgba(45, 90, 59, 0.7);
+}
+.card3 .layer:hover{
+    background:rgba(122, 40, 199, 0.7);
+}
+.layer h3{
+    width: 100%;
+    margin-top: 60%;
+    color: white;  
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    
+}
+.layer:hover h3{
+    opacity: 1;
+}
+
+@media(max-width:700px) {
+    .feature-cards{
+        flex-direction: column;
+        
+    }
+    
+}
+
+/*  facilities */
+.our-facilities{
+    text-align: center;
+    margin:6%;
+}
+.our-facilities p{
+    color:gray;
+    font-size: 14px;
+    color: gray;
+}
+.our-facilities h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.facilites{
+    display: flex;
+    justify-content: space-between;
+}
+.facility-column img{
+    margin-top: 10vh;
+    width: 20rem;
+    border-radius: 10px;
+    
+}
+.facility-column h3{
+    text-align: left;
+    width: 19rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.facility-column p{
+text-align: left;
+width: 19rem;
+font-size: 14px;
+}
+
+.learn-more{
+    border: 1px solid #f44336;
+    text-align: center;
+    width: 9rem;    
+}
+.learn-more a{
+    text-decoration: none;
+    text-align: center;
+    
+}
+.learn-more p{
+    color:black;
+    width:9rem;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+}
+.learn-more:hover, .learn-more p:hover{
+    transition: 1s;
+    background-color: #f44336;
+    color: white;
+}
+@media(max-width:700px) {
+    .facilites{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+/* Footer */
+.footer{
+    
+    min-height: 50vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url(images/safe.png);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.footer h3{
+    padding-top: 3rem;
+    margin-bottom:3rem ;
+}
+.social{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.social i{
+    margin-right: 1.4rem;
+    font-size: 1.3rem;
 }
