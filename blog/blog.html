@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blog</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png"></a>
+            </div>
+            
+            <ul class="list" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ENROLL NOW</a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Our Certificate & Online Programs For 2021</h1>
+        </div>
+
+    </section>
+
+    <!-------JavaScript for toggle menu -->
+<script>
+    var navlinks=document.getElementById("navlinks");
+    
+    function showmenu(){
+        navlinks.style.display="block";
+        navlinks.style.transition="1s";
+    }
+    function hidemenu(){
+        navlinks.style.display="none";
+        navlinks.style.transition="1s";
+    }
+
+</script>  
+
+    <!--Certificate-->
+    <section class="certificate">
+
+        <div class="image-text-input">
+            <img src="../images/certificate.jpg">
+            <h1>Our Certificate & Online Programs For 2021</h1>
+            <p>In sollicitudin elit dolor. Suspendisse lacinia vitae mi et tincidunt. Etiam magna magna, bibendum non est in, hendrerit aliquet urna. Donec elementum, lectus non tempor laoreet, nisl tellus vestibulum felis, eget ornare neque ante vel arcu. Nullam nec vulputate ligula, suscipit congue velit. Ut elementum vulputate nulla suscipit pretium. Curabitur et mi urna. Vestibulum sit amet pulvinar erat, id varius lacus. Proin nunc mi, tempus auctor euismod in, bibendum id tortor. Quisque eget hendrerit enim. Etiam consectetur sapien nisl, in porta erat placerat eu. Maecenas fermentum nisi eget mi bibendum dignissim. Integer varius interdum est, eu mollis sem euismod a. Nullam eget blandit mi.</p>
+            <p>In sollicitudin elit dolor. Suspendisse lacinia vitae mi et tincidunt. Etiam magna magna, bibendum non est in, hendrerit aliquet urna. Donec elementum, lectus non tempor laoreet, nisl tellus vestibulum felis, eget ornare neque ante vel arcu. Nullam nec vulputate ligula, suscipit congue velit. Ut elementum vulputate nulla suscipit pretium. Curabitur et mi urna. Vestibulum sit amet pulvinar erat, id varius lacus. Proin nunc mi, tempus auctor euismod in, bibendum id tortor. Quisque eget hendrerit enim. Etiam consectetur sapien nisl, in porta erat placerat eu. Maecenas fermentum nisi eget mi bibendum dignissim. Integer varius interdum est, eu mollis sem euismod a. Nullam eget blandit mi.</p>
+            <p>In sollicitudin elit dolor. Suspendisse lacinia vitae mi et tincidunt. Etiam magna magna, bibendum non est in, hendrerit aliquet urna. Donec elementum, lectus non tempor laoreet, nisl tellus vestibulum felis, eget ornare neque ante vel arcu. Nullam nec vulputate ligula, suscipit congue velit. Ut elementum vulputate nulla suscipit pretium. Curabitur et mi urna. Vestibulum sit amet pulvinar erat, id varius lacus. Proin nunc mi, tempus auctor euismod in, bibendum id tortor. Quisque eget hendrerit enim. Etiam consectetur sapien nisl, in porta erat placerat eu. Maecenas fermentum nisi eget mi bibendum dignissim. Integer varius interdum est, eu mollis sem euismod a. Nullam eget blandit mi.</p>
+            
+            <div class="input-comment">
+                <h3>Leave a Comment</h3>
+                <label>
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Email">
+                    <input type="text" placeholder="Enter Your Comment">
+                    
+                </label>
+                <input type="submit">
+            </div>
+        </div>
+        
+        <div class="post-catagories">
+            <h3>Post Categories</h3>
+            <div class="index"> <p>Buisness Analytics</p>        <p>21</p> </div>
+            <div class="index"> <p>Technologies</p>              <p>20</p> </div>
+            <div class="index"> <p>Database Analytics</p>        <p>11</p> </div>
+            <div class="index"> <p>Artificial Intellegence</p>   <p>15</p> </div>
+            <div class="index"> <p>Machine Learning</p>          <p>16</p> </div>
+            <div class="index"> <p>Covid-19 Analytics</p>        <p>41</p> </div>
+            <div class="index"> <p>Marketing Analytics</p>       <p>21</p> </div>
+            <div class="index"> <p>Employment</p>                <p>21</p> </div>
+
+        </div>
+    </section>
+
+    <section class="text">
+    </section>
+
+
+
+
+    
+
+
+
+
+
+
+
+    <!--FOOTER-->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed,
+        we’re the nation’s oldest Catholic and Jesuit university.<br>
+        We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make
+        Eduford home.</p>
+
+        <div class="social">
+            <a href=""><i style="color: blue;" class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href=""><i style="color: lightskyblue;" class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i style="color: red;" class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i style="color: darkblue;" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+        <p>Made with <i style="color: red;" class="fa fa-smile-o" ></i> by Amalendu and team <i style="color: blue;" class="fa fa-copyright" ></i>    </p>
+    </section>
+
+
+    
+</body>
+</html>
