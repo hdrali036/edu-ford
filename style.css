@@ -84,6 +84,9 @@ nav .fa{
     
 }
 @media(max-width:700px){
+    .header{
+        min-width: 100%;
+    }
     .text-box h1{font-size: 20px;}
     .list li{
         display: block;
@@ -329,6 +332,115 @@ font-size: 14px;
     }
     
 }
+/*----------------Comments---------------- */
+
+.comments{
+    margin: 10%;
+}
+
+.comments h1{
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+.comments p{
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 1rem;
+}
+.feedback{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+}
+.col{
+    background-color: rgba(255,204,204,0.3);
+    border-radius: 10px;
+    max-width: 43%;
+    display: flex;
+    padding: 2rem;
+    
+}
+.text{
+    padding-left: 1.5rem;
+}
+.text p{
+    text-align: left;
+    padding-bottom: 1rem;
+    
+}
+.text i{
+    margin-top: 1rem;
+    color:red;
+}
+
+
+.comments img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+}
+@media(max-width:700px){
+    .feedback{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .col{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .comments h1{
+        font-size: x-large;
+    }
+    .comments h3{
+        font-size:small;
+    }
+
+}
+
+
+/*  Contact-us  */
+
+.contact-us{
+    margin-bottom: 8rem;
+    min-height: 60vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url(images/about.jpg);
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    position:relative;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.contact-us h1{
+    padding: 15vh 0 2vh 0;
+    margin-bottom: 2rem;
+}
+.contact-us a{
+    background:transparent;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    border: 1px solid;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    font-size: small;
+}
+.contact-us a:hover{
+    background-color: #f44336;
+    border-color: #f44336;
+    transition: 1s;
+}
+@media(max-width:700px){
+    .contact-us h1{
+        font-size: 20px;
+    }
+}
+
 
 /* Footer */
 .footer{
